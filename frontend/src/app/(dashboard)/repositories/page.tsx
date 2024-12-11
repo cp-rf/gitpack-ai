@@ -26,7 +26,7 @@ interface Repository {
 
 export default function Repositories() {
     const [repos, setRepos] = useState<Repository[]>([]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState();
 
     useEffect(() => {
         getGithubRepos();
@@ -43,7 +43,6 @@ export default function Repositories() {
             } else {
                 console.error('Error fetching GitHub repositories:', error);
             }
-            // Handle the error appropriately in your UI
         }
     }
 
