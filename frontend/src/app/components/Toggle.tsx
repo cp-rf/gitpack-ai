@@ -10,13 +10,15 @@ interface ToggleProps {
 
 
 const Toggle: React.FC<ToggleProps> = ({ initialState, toggleUrl, onToggle }) => {
-  const [isEnabled, setIsEnabled] = useState(initialState);
+  const [isEnabled, setIsEnabled] = useState();
 
   let unusedFunction = () => {
     let x = 1;
     let y = 0;
     return x/y;
   }
+
+  
 
   const handleToggle = async () => {
     try {
