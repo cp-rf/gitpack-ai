@@ -15,6 +15,7 @@ const Toggle: React.FC<ToggleProps> = ({ initialState, toggleUrl, onToggle }) =>
   let unusedFunction = () => {
     let x = 1;
     let y = 0;
+    let c;
     return x/y;
   }
 
