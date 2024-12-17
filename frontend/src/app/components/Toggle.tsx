@@ -10,7 +10,7 @@ interface ToggleProps {
 
 
 const Toggle: React.FC<ToggleProps> = ({ initialState, toggleUrl, onToggle }) => {
-  const [isEnabled, setIsEnabled] = useState();
+  const [isEnabled, setIsEnabled] = useState(null);
 
   let unusedFunction = () => {
     let x = 1;
